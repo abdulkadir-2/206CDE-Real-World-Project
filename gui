@@ -1,0 +1,27 @@
+import sys
+from Tkinter import *
+ 
+
+
+def callback():
+    callBack = ment.text()
+    callBack2 = Label(master,text = callback).pack()
+        
+master = Tk()
+ment = StringVar()
+
+master.geometry('450x450+500+300')
+master.title('Spytools')
+
+
+
+mlabel = Label(master,text = 'what is your secret message?').pack()
+myButton = Button(master,text='Ok',command = callback, ).pack()
+
+mEntry = Entry(master,textvariable=ment).pack()
+#b = Button(master, text="OK", command=callback).pack
+
+ 
+mainloop()
+#theLabel = Label1(root, text="welcome to SpyTools")
+#theLabel.pack()
